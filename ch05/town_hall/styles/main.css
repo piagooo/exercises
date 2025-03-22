@@ -1,0 +1,110 @@
+/* reset selector*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* custom property */
+:root {
+	--accent-color: #800000;  /* could also be coded #800 */
+}
+
+/* default styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width:80%;
+	margin:auto;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--accent-color);
+}
+a:hover, a:focus{
+	font-style: italic;
+	color: var(--accent-color);
+}
+h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+h2 {
+	font-size: 130%;
+	color: var(--accent-color);
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+h3 {
+	font-size: 105%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+ul{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin-left: 2em;
+}
+/* the styles for the header */
+header {
+	& h2 {
+		font-size: 175%;
+		padding-bottom: 0;
+	}
+	& h3 {
+		font-size: 130%;
+		font-style: italic;
+		padding-bottom: 1em;
+	}
+	& img {
+		float: left;
+		margin-top: .75em;
+		margin-bottom: .75em;
+	}
+	background: linear-gradient(30deg,#f6bb73 0%, white 47%, #f6bb73 100%);
+	border-bottom: 2px solid var(--accent-color);
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+
+	img{
+		border-style: double;
+		border-radius: 5px;
+		border-width: 4px;
+		border-color: var(--accent-color);
+	}
+
+	h1{
+		border-top: 2px solid var(--accent-color);
+		border-bottom: 2px solid var(--accent-color);
+	}
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+	& p {
+		text-align: center;
+		color: white;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	background-color: var(--accent-color);
+}
+
+/* CSS class */
+.large {
+	font-size: 125%;
+}
+
+blockquote{
+	font-style: italic;
+	padding-left: 1em;
+	padding-top: .5em;
+}
