@@ -1,0 +1,118 @@
+/* custom property */
+:root {
+	--accent-color: #800000;  /* could also be coded #800 */
+	--gradient-color: #f6bb73;
+}
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* default styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 80%;
+	margin: auto;
+	border: 2px solid var(--accent-color);
+	width: 80%;
+	max-width: 1024px;;
+	font-size: 90% + .2vw;
+	line-height: 1.5;
+}
+a:hover, a:focus{
+	font-style: italic;
+	color: var(--accent-color);
+}
+h1, h2, h3, p, ul {
+	padding: .25em 0;
+}
+h1 {
+	font-size: 150%;
+}
+h2 {
+	font-size: 130%;
+	color: var(--accent-color);
+}
+h3 {
+	font-size: 105%;
+}
+ul {
+	margin-left: 2em;
+}
+
+/* the styles for the header */
+header {
+	border-bottom: 2px solid var(--accent-color);
+	background-image: linear-gradient(
+	    30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
+	& h2 {
+		font-size: 175%;
+		padding: .5em 0 0 0;
+	}
+	& h3 {
+		font-size: 130%;
+		font-style: italic;
+		padding-bottom: 1em;
+	}
+	& img {
+		float: left;
+		margin: .75em 1em;
+		width: clamp(40px, 10%, 80px);
+	}
+	line-height: 1.2;
+}
+
+/* the styles for the main content */
+main {
+	padding: 0 1em 1em;
+	
+	& blockquote {
+		font-style: italic;
+		padding-left: 1em;
+	}
+	& img {
+		border: 4px double var(--accent-color);
+		border-radius: 10px;
+	}
+	display:flex;
+	background-color: rgb(250, 246, 236);
+}
+/*style rules for section*/
+section{
+	flex-basis: 75%;
+	margin-right: 15px;
+	img{
+		float: right;
+		width: clamp(100px, 50%, 250px);
+	}
+}
+.featured{
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
+}
+
+aside{
+	flex-basis:25%;
+
+	img{
+		width: clamp(40px, 50%, 75px);
+	}
+}
+/* the styles for the footer */
+footer {
+	background-color: var(--accent-color);
+	& p {
+		text-align: center;
+		color: white;
+		padding: 1em 0;
+	}
+}
+
+/* CSS class */
+.large {
+	font-size: 125%;
+}
