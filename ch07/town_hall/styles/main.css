@@ -140,6 +140,29 @@ footer {
 		text-align: center;
 	}
 }
+.submenu{
+	position: absolute; 
+	background-color: var(--accent-color);
+	color: var(--light-color);
+	display: none;
+	a{
+		width: 100%;
+		margin: 0 2px 2px;
+	}
+}
+
+.menu:has(.submenu){
+	position: relative;
+	small{
+		padding-left: 4px;
+	}
+	:hover > .submenu{
+		display: block;
+	}
+	& > li a {
+		margin: 0 2px 2px;
+	}
+}
 
 .navbar{
 	background-color: var(--accent-color);
@@ -163,4 +186,12 @@ footer {
 		padding: 0;
 		list-style-type: none;
 	}
+}
+
+.menu > li:first-child a {
+	margin-left: 0; 
+}
+
+.menu > li:last-child a {
+	margin-right: 0; 
 }
