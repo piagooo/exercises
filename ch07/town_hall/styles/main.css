@@ -145,10 +145,6 @@ footer {
 	background-color: var(--accent-color);
 	color: var(--light-color);
 	display: none;
-	a{
-		width: 100%;
-		margin: 0 2px 2px;
-	}
 }
 
 .menu:has(.submenu){
@@ -157,9 +153,9 @@ footer {
 		padding-left: 4px;
 	}
 	:hover > .submenu{
-		display: block;
+		display:block;
 	}
-	& > li a {
+	a {
 		margin: 0 2px 2px;
 	}
 }
@@ -188,10 +184,3 @@ footer {
 	}
 }
 
-.menu > li:first-child a {
-	margin-left: 0; 
-}
-
-.menu > li:last-child a {
-	margin-right: 0; 
-}
