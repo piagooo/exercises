@@ -17,7 +17,7 @@
 
 @font-face {
 	font-family: Cowboy;
-	src: url("/ch10/town_hall/styles/cowboy-hippie-pro/Cowboy_Hippie_Pro.otf") format("opentype");
+	src: URL("../styles/cowboy-hippie-pro/Cowboy_Hippie_Pro.otf") format("opentype");
 }
 /* default styles */
 body {
