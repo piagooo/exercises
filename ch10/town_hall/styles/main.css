@@ -15,6 +15,10 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: Cowboy;
+	src: url("/ch10/town_hall/styles/cowboy-hippie-pro/Cowboy_Hippie_Pro.otf") format("opentype");
+}
 /* default styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -55,6 +59,7 @@ header {
 	& h2 {
 		font-size: 175%;
 		padding: .5em 0 0 0;
+		font-family: Cowboy;
 	}
 	& h3 {
 		font-size: 130%;
