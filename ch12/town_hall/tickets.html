@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>San Joaquin Valley Town Hall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	<header>
+		<img src="images/town_hall_logo.gif" alt="Town Hall logo">
+		<h2>San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our <em class="large">75</em><sup>th</sup> Year</h3>
+	</header>
+	<nav class="navbar">
+		<input type="checkbox" id="checkbox-toggle" />
+    	<label for="checkbox-toggle" class="menu-btn"></label>
+
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Speakers<small></small></a>
+				<ul class="submenu">
+					<li><a href="speakers/brancaccio.html">David Brancaccio</a></li>
+					<li><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></li>
+					<li><a href="speakers/chua.html">Amy Chua</a></li>
+					<li><a href="speakers/sampson.html">Scott Sampson</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Luncheons</a></li>
+			<li><a class="current">Tickets</a></li>
+			<li><a href="#">About Us<small></small></a>
+				<ul class="submenu">
+					<li><a href="#">Our History</a></li>
+					<li><a href="#">Board of Directors</a></li>
+					<li><a href="#">Past Speakers</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+    <main>
+		<aside>
+			<h2>Guest speakers</h2>
+			<div id="speakers">
+			<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
+			<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
+			<h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+			<h3>January<br><a href="../speakers/chua.html">Amy Chua</a></h3>
+			<img src="images/chua75.jpg" alt="Amy Chua photo">
+			<h3>February<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+			<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			</div>
+		</aside>
+		<section>
+			<h1>Order Form</h1>
+			<form action="order_tickets.html" method="post">
+				<fieldset>
+					<legend>Member Information</legend>
+					
+					<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" autofocus required>
+
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required>
+
+					<label for="email">E-Mail:</label>
+					<input type="email" name="email" id="email" required>
+
+					<label for="phone" >Phone Number:</label>
+					<input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number with 3 numbers followed by a dash, another 3 numbers, dash, then 4 numbers">
+				</fieldset>
+
+				<fieldset>
+					<legend>Ordering Information</legend>
+					<label>Order Type</label>
+					<select name="order-type" id="order-type">
+						<option value="base">Base Package</option>
+						<option value="upgraded">Upgraded Package</option>
+						<option value="premium">Premium Package</option>
+					</select>
+
+					<label>Number of Tickets</label>
+					<input type="number" placeholder="1" min="1" max="100">
+				</fieldset>
+
+				<fieldset>
+					<legend>Payment Information</legend>
+
+					<label>Card Type</label>
+					<select name="card-type" id="card-type">
+						<option value="visa">Visa</option>
+						<option value="master">Master Card</option>
+						<option value="discover">Discover</option>
+					</select>
+
+					<label>Credit Card Number</label>
+					<input type="textfield" required pattern="[0-9]{16}" placeholder="16 digits" title="entry must be 16 digits">
+
+					<label>Expiration Date</label>
+					<select name="expiration-month" style="width:49%;float: left;">
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					<select name="expiration-year" style="width:49%; ">
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+					</select>
+				</fieldset>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>
